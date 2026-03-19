@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        /* CSS Design ပိုင်း */
         body, html {
             margin: 0; padding: 0; width: 100%; height: 100%;
             font-family: 'Segoe UI', sans-serif;
             color: white;
-            /* Windows 10 Wallpaper Background */
             background-image: url('background.png'); 
             background-size: cover;
             background-position: center;
@@ -22,26 +20,26 @@
         }
 
         .overlay {
-            background: rgba(0, 0, 0, 0.5); /* Background ကို နည်းနည်းမှောင်ပေးတာ */
+            background: rgba(0, 0, 0, 0.6); 
             width: 100%; min-height: 100vh;
             display: flex; flex-direction: column; align-items: center;
-            padding-top: 50px; padding-bottom: 50px;
+            padding-top: 20px; padding-bottom: 50px;
         }
 
-        <marquee style="background: rgba(0,255,0,0.2); color: #00ff00; padding: 5px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #00ff00;">
-    📢 ကိုဆီဇာရဲ့ နည်းပညာမျှဝေခြင်း Channel မှ ကြိုဆိုပါတယ်။ အသစ်သစ်သော Tutorial များကို ဤနေရာတွင် စောင့်မျှော်ကြည့်ရှုနိုင်ပါပြီ...
-</marquee>
-        
+        .marquee-box {
+            width: 90%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
 
         .profile-card {
             text-align: center;
             width: 90%; max-width: 400px;
         }
 
-        /* Logo ပုံအတွက် styling */
         .my-logo {
             width: 100px; height: 100px;
-            border-radius: 50%; /* ဝိုင်းဝိုင်းလေးဖြစ်အောင် */
+            border-radius: 50%;
             object-fit: cover;
             border: 3px solid #00ff00;
             margin-bottom: 15px;
@@ -51,7 +49,6 @@
         h1 { margin: 10px 0; font-size: 1.8rem; }
         p { opacity: 0.8; margin-bottom: 30px; }
 
-        /* ခလုတ်များ Styling */
         .links-group {
             display: flex; flex-direction: column; gap: 15px;
         }
@@ -70,22 +67,27 @@
 
         .btn i { font-size: 1.4rem; margin-right: 15px; width: 30px; text-align: center; }
 
-        /* ခလုတ်တစ်ခုချင်းစီရဲ့ အရောင်များ */
-        .tg { background: rgba(0, 136, 204, 0.8); } /* Telegram Blue */
-        .yt { background: rgba(255, 0, 0, 0.8); }    /* YouTube Red */
-        .blog { background: rgba(255, 165, 0, 0.8); } /* Blog Orange */
-        .gh { background: rgba(36, 41, 46, 0.8); }   /* GitHub Dark */
+        .tg { background: rgba(0, 136, 204, 0.8); }
+        .yt { background: rgba(255, 0, 0, 0.8); }
+        .blog { background: rgba(255, 165, 0, 0.8); }
+        .gh { background: rgba(36, 41, 46, 0.8); }
 
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.3);
         }
     </style>
 </head>
 <body>
 
     <div class="overlay">
+        <div class="marquee-box">
+            <marquee style="background: rgba(0,255,0,0.1); color: #00ff00; padding: 10px; border-radius: 12px; border: 1px solid rgba(0,255,0,0.3); font-size: 14px;">
+                📢 ကိုဆီဇာရဲ့ နည်းပညာမျှဝေခြင်း Channel မှ ကြိုဆိုပါတယ်။ အသစ်သစ်သော Tutorial များကို ဤနေရာတွင် စောင့်မျှော်ကြည့်ရှုနိုင်ပါပြီ...
+            </marquee>
+        </div>
+
         <div class="profile-card">
             <img src="logo.png" alt="Logo" class="my-logo">
             
@@ -93,24 +95,22 @@
             <p>Developer & Content Creator</p>
 
             <div class="links-group">
-                <a href="https://t.me/your_channel" class="btn tg">
+                <a href="https://t.me/Myanmar_logic_000" class="btn tg">
                     <i class="fab fa-telegram"></i> Main Telegram Channel
                 </a>
+                
                 <a href="https://t.me/your_chat" class="btn tg">
                     <i class="fas fa-comments"></i> Discussion Group
                 </a>
-
                 <a href="https://youtube.com/@yourchannel" class="btn yt">
                     <i class="fab fa-youtube"></i> Subscribe on YouTube
                 </a>
-
                 <a href="https://yourblog.com" class="btn blog">
                     <i class="fas fa-globe"></i> Visit My Blog
                 </a>
                 <a href="#" class="btn blog">
                     <i class="fas fa-newspaper"></i> Latest Articles
                 </a>
-
                 <a href="https://github.com/your-username" class="btn gh">
                     <i class="fab fa-github"></i> View My Projects
                 </a>
