@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
+        /* CSS ပိုင်း (ဒီကြားထဲမှာ marquee ကုဒ် မထည့်ရပါ) */
         body, html {
             margin: 0; padding: 0; width: 100%; height: 100%;
             font-family: 'Segoe UI', sans-serif;
@@ -26,7 +27,7 @@
             padding-top: 20px; padding-bottom: 50px;
         }
 
-        .marquee-box {
+        .marquee-container {
             width: 90%;
             max-width: 400px;
             margin-bottom: 20px;
@@ -82,8 +83,8 @@
 <body>
 
     <div class="overlay">
-        <div class="marquee-box">
-            <marquee style="background: rgba(0,255,0,0.1); color: #00ff00; padding: 10px; border-radius: 12px; border: 1px solid rgba(0,255,0,0.3); font-size: 14px;">
+        <div class="marquee-container">
+            <marquee scrollamount="6" style="background: rgba(0,255,0,0.15); color: #00ff00; padding: 12px; border-radius: 12px; border: 1px solid #00ff00; font-weight: bold;">
                 📢 ကိုဆီဇာရဲ့ နည်းပညာမျှဝေခြင်း Channel မှ ကြိုဆိုပါတယ်။ အသစ်သစ်သော Tutorial များကို ဤနေရာတွင် စောင့်မျှော်ကြည့်ရှုနိုင်ပါပြီ...
             </marquee>
         </div>
@@ -102,15 +103,15 @@
                 <a href="https://t.me/your_chat" class="btn tg">
                     <i class="fas fa-comments"></i> Discussion Group
                 </a>
+                
                 <a href="https://youtube.com/@yourchannel" class="btn yt">
                     <i class="fab fa-youtube"></i> Subscribe on YouTube
                 </a>
+                
                 <a href="https://yourblog.com" class="btn blog">
                     <i class="fas fa-globe"></i> Visit My Blog
                 </a>
-                <a href="#" class="btn blog">
-                    <i class="fas fa-newspaper"></i> Latest Articles
-                </a>
+
                 <a href="https://github.com/your-username" class="btn gh">
                     <i class="fab fa-github"></i> View My Projects
                 </a>
